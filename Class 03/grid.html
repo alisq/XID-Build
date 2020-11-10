@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GRID TEST</title>
+	<style>
+		.flag {
+			width:100vw;
+			height:calc((100vw / 16) * 10);
+			background:blue;
+			display:grid;
+			grid-template-columns:5fr 2fr 9fr;
+			grid-template-rows:4fr 2fr 4fr ;
+		}
+
+
+		.blue {
+			background:darkblue;
+		}
+
+		.white {
+			background:white;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="flag">
+		<div class="blue"></div>
+		<div class="white"></div>
+		<div class="blue"></div>
+
+		<div class="white"></div>
+		<div class="white"></div>
+		<div class="white"></div>
+
+		<div class="blue"></div>
+		<div class="white"></div>
+		<div class="blue"></div>
+
+
+	</div>
+
+</body>
+</html>

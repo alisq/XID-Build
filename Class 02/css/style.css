@@ -1,0 +1,46 @@
+
+
+			body {
+				font-size:24px;
+			}
+	
+
+			.openingParagraph {
+				font-size:200%;
+			}
+
+			.wholePage {
+				font-family:arial;
+				width:1000px;
+				margin:auto;
+				
+
+			}
+
+			.box {
+				width:500px;
+				height:500px;
+				background:rgba(0,0,255,0.75);
+				color:white;
+				padding:20px;
+				border:10px solid red;
+				margin-bottom:200px;
+				box-sizing:border-box;
+				
+				position:fixed;
+				right:300px;
+				z-index: 2;
+
+			}
+
+			.box2 {
+				right:250px;
+				top:50px;
+				z-index: 1;
+			}
+
+			.inner {
+				background:black;
+				height:30px;
+				width:5rem;
+			}
