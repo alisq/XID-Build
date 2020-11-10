@@ -1,0 +1,52 @@
+body {
+	background:red;
+}
+
+
+.someText {
+	font-size:300px;
+	font-family:helvetica;
+	line-height:0.7em;
+}
+
+
+p {
+	font-size:100px;
+	font-family:monaco;
+}
+
+
+a {
+	font-size:100px;
+	color:black;
+	text-decoration:none;
+}
+
+
+a:hover {
+	
+	color:white;
+	transition:color 0.2s;
+}
+
+.alisContainer {
+	background:black;
+	display:grid;
+	grid-template-columns:40% 20% 40%;
+	grid-template-rows:40% 20% 40%;
+	min-height:500px;
+}
+
+.interior1 {
+	background:white;
+		
+}
+
+.interior2 {
+		
+	
+}
+
+.interior1, .interior2 {
+	border:1px solid #000;
+}
