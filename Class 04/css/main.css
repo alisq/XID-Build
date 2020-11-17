@@ -1,0 +1,16 @@
+.menu {
+	height:50px;
+	background:red;
+	transition:all 0.5s;
+}
+
+
+.open {
+	height:100vh;
+}
+
+
+p {
+	cursor:pointer;
+}
+
