@@ -13,6 +13,7 @@ html, body {
 	height:50px;
 	cursor:pointer;
 	color:#FFF;
+	transition:0.5s;
 }
 
 .menu.open {
@@ -28,6 +29,19 @@ html, body {
 	margin-top:50px;
 	display:grid;
 	grid-template-columns: repeat(5, 1fr);
+}
+
+.big {
+	font-size:60px;
+}
+
+.w {
+	opacity:0;
+	transition:opacity 0.5s;
+}
+
+.w:hover {
+	opacity:1;
 }
 
 .square {

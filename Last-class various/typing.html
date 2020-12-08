@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		.typing, .typing2 {
+			font-size:80px;
+			font-family:monospace;
+		}
+	</style>
+</head>
+<body>
+
+
+
+	<div class="typing"></div>
+	<div class="typing2"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+<script>
+
+	//move to separate file. do as i say. not as i do.
+
+	//var options = ;
+
+	new Typed('.typing', {strings: ['Ali S. Qadeer<br />is brilliant!'], typeSpeed: 20 });
+
+
+	setTimeout(function(){  //BEGIN FUNCTION TO DELAY
+
+			new Typed('.typing2', {
+		  		strings: ['pizza/soup. match made in hell'],
+		  			typeSpeed: 20
+				});
+
+	},1000) //END FUNCTION TO DELAY. THIS IS DELAYED BY 1000milliseconds (aka 1 second)
+
+</script>
+
+
+</body>
+</html>

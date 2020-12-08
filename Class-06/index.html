@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Round 05 — Interactivity</title>
+
+		<link rel="stylesheet" href="https://use.typekit.net/aem0uxf.css">
+
+
+		<link rel="stylesheet" href="css/round4.css">
+
+		<style>
+
+			html {
+				min-height:5000px;
+			}
+
+			.aDiv {
+				width:300px;
+				height:300px;
+				background:black;
+				/*position:absolute;*/
+				margin:10px;
+				color:white;
+				position:absolute;
+				padding:10px;
+			}		
+
+
+			.div1 {
+				top:30px;
+				left:30px;
+			}
+
+			.div2 {
+				top:60px;
+				left:60px;
+				opacity:0;
+			}
+
+			.div3 {
+				top:90px;
+				left:90px;
+				opacity:0;
+			}
+
+
+		</style>
+
+</head>
+<body>
+
+
+	<div class="aDiv div1">Waltz, nymph, for quick jigs vex Bud. - Dmitri Borgmann
+Sphinx of black quartz, judge my vow.
+Pack my box with five dozen liquor jugs. - Mark Dunn
+Glib jocks quiz nymph to vex dwarf.
+
+Jackdaws love my big sphinx of quartz.
+
+The five boxing wizards jump quickly.
+put in any text you want
+This is a paragraph of text here we go.</div>
+
+	<div class="aDiv div2">Waltz, nymph, for quick jigs vex Bud. - Dmitri Borgmann
+Sphinx of black quartz, judge my vow.
+Pack my box with five dozen liquor jugs. - Mark Dunn
+Glib jocks quiz nymph to vex dwarf.
+
+Jackdaws love my big sphinx of quartz.
+
+The five boxing wizards jump quickly.
+put in any text you want
+This is a paragraph of text here we go.</div>
+
+	<div class="aDiv div3">Waltz, nymph, for quick jigs vex Bud. - Dmitri Borgmann
+Sphinx of black quartz, judge my vow.
+Pack my box with five dozen liquor jugs. - Mark Dunn
+Glib jocks quiz nymph to vex dwarf.
+
+Jackdaws love my big sphinx of quartz.
+
+The five boxing wizards jump quickly.
+put in any text you want
+This is a paragraph of text here we go.</div>
+
+<!-- 
+	<h1>Waltz, nymph, for quick jigs vex Bud. - Dmitri Borgmann</h1>
+
+	<h2>Sphinx of black quartz, judge my vow.</h2>
+
+	<h3>Pack my box with five dozen liquor jugs. - Mark Dunn</h3>
+	<p>Glib jocks quiz nymph to vex dwarf.</p>
+	<p>Jackdaws love <span title="specific words">my big</span> sphinx of quartz.</p>
+	<h2 title="put in any text you want">The five boxing wizards jump quickly.</h2>
+	
+	 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+	
+
+<a href="http://google.com">
+
+</a>
+
+
+<p class="big">
+<span class='w'>This</span>
+<span class='w'>is</span>
+<span class='w'>a</span>
+<span class='w'>paragraph</span>
+<span class='w'>of</span>
+<span class='w'>text</span>
+<span class='w'>here</span>
+<span class='w'>we</span>
+<span class='w'>go. </span>
+	</p>
+
+	
+
+	<script>
+
+			var d2t = $(".div2").offset().top;				//grab div2's position from top of the page and create a var.
+			var d3t = $(".div3").offset().top;				//grab div3's position from top of the page and create a var.
+
+			$(document).scroll(function(){					//listen for when you scroll execute code below.
+
+
+				var st = $(document).scrollTop();			//figuring out how far scrolled from top of page putting into var
+				if (st >= (d2t-10)) {						//if scroll distance is greater or equal to how far div2 is from top (minus 10) then do the follow
+					$(".div2").css({"opacity":"1"}) 		//change the css of div2 to visible.
+				} else {
+					$(".div2").css({"opacity":"0"})
+				}
+
+				if (st > (d3t-10)) {
+					$(".div3").css({"opacity":"1"})
+				} else {
+					$(".div3").css({"opacity":"0"})
+				}
+
+			})
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

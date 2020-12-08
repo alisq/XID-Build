@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+
+		img {
+			max-width:100%;
+		}
+
+		.cat {
+			display:none;
+		}
+
+		#cat1 {
+			display:block;
+		}
+
+		.catContain {
+			display:grid;
+			grid-template-columns: repeat(6, 1fr)
+		}
+
+		/* move this style to a separate folder */
+	</style>
+</head>
+<body>
+
+		<div class="catContain">
+
+
+	<!-- <a href="jasmine-file2.html"> -->
+		<img class="cat" id="cat1" src="https://licensinginternational.org/
+		wp-content/uploads/2020/04/very-hungry-584x275.png" />
+
+		<img class="cat" id="cat2" src="https://licensinginternational.org/wp-content/uploads/2020/04/very-hungry-584x275.png" />
+
+		<img class="cat" id="cat3" src="https://licensinginternational.org/wp-content/uploads/2020/04/very-hungry-584x275.png" />
+
+		<img class="cat" id="cat4" src="https://licensinginternational.org/wp-content/uploads/2020/04/very-hungry-584x275.png" />
+
+		<img class="cat" id="cat5" src="https://licensinginternational.org/wp-content/uploads/2020/04/very-hungry-584x275.png" />
+
+		<img class="cat" id="cat6" src="https://licensinginternational.org/wp-content/uploads/2020/04/very-hungry-584x275.png" />
+
+	<!-- </a> -->
+
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+		
+
+		$(".cat").click(function(){
+			catNumber = $(this).attr("id") //grab the ID attribute and load it into a variable
+			catNumber = catNumber.replace("cat","") //remove the prefix "cat" from the variable string
+			
+			catNumber = parseInt(catNumber) //convert variable from string to actual number and
+			
+			catNumber = catNumber+1 //add one
+			catNumber = "#cat"+catNumber //convert it to the ID of the next image
+
+			$(catNumber).fadeIn(500)
+		})
+
+		$("#cat6").click(function(){
+			window.location.href="jasmine-file2.html"
+		})
+
+		//move this script to a separate folder
+
+		// $(".cat1").click(function(){
+		// 	$(this)
+		// 		.clone()
+		// 		.attr("class","cat2")
+		// 		.appendTo("body")
+		// })
+
+	</script>
+</body>
+</html>

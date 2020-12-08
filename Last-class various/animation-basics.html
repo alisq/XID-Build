@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			background:#000;
+		}
+
+		.square {
+			display:block;
+			transition:transform 2s;
+			position:absolute;
+			width:300px;
+			
+
+		}
+
+
+		.animated-square {
+			animation-name: fabrizio;
+			animation-duration:15s;
+			animation-iteration-count:infinite;
+		}
+
+		.square:hover {
+			transform:rotate(45deg);
+			
+		}
+
+		@keyframes fabrizio {
+			0% {top:0;left:0;}
+			50% {top:0; left: 90vw;}
+			75% {top:80vh; left:0;}
+			100% { top:80vh; left:90vw; }
+
+		}
+	
+	</style>
+</head>
+<body>
+
+<!-- GREENSOC -->
+
+
+
+<img class="square animated-square" src="ghost.jpg" /> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+<script>
+//	$(".square").click(function(){
+//		$(this).addClass("animated-square")
+	//})
+
+</script>
+
+
+</body>
+</html>

@@ -1,4 +1,9 @@
 
+
+
+$(document).tooltip()
+
+
 var hoverTimes = 0;
 $(".s2").mouseover(function(){
 	//hovertimes = hovertimes+1;
